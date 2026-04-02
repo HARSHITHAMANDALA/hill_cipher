@@ -19,7 +19,7 @@ The hash of the original message is appended to the plaintext before encryption.
 After decryption, the hash is recomputed and compared to verify authenticity.
 
 ## Cipher Used: Hill Cipher
-  `
+
 The Hill Cipher is a classical **polygraphic substitution cipher** based on **matrix multiplication**.
 
 - Operates on blocks of letters (block size = key size)  
