@@ -37,9 +37,9 @@ The hash function combines two techniques:
    
          h = (h × 31 + c) mod m
    where:
-   h = Current value of the hash
-   c = Numeric value of the current character
-   m = modulus
+      h = Current value of the hash
+      c = Numeric value of the current character
+      m = modulus
 3. **Bitwise Mixing (Shift + XOR)**
    
          hash = hash ⊕ (hash << m)
