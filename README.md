@@ -61,4 +61,5 @@ This project consists of:
  - `hash.h`
 
 g++ hill.cpp -o out
+
 ./out
