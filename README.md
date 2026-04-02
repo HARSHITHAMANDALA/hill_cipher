@@ -10,10 +10,10 @@ This project implements a **cryptographic system** that combines a classical enc
 The system ensures secure communication using two layers:
 
 ### 1. Encryption Layer (Hill Cipher)
-Protects the message from unauthorized access by converting plaintext into ciphertext.
+- Protects the message from unauthorized access by converting plaintext into ciphertext.
 
 ### 2. Integrity Layer (Hash Function)
-Ensures that the message has not been altered during transmission.
+- Ensures that the message has not been altered during transmission.
 
-- The hash of the original message is appended to the plaintext before encryption.  
-- After decryption, the hash is recomputed and compared to verify authenticity.
+The hash of the original message is appended to the plaintext before encryption.  
+After decryption, the hash is recomputed and compared to verify authenticity.
