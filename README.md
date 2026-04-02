@@ -17,3 +17,11 @@ The system ensures secure communication using two layers:
 
 The hash of the original message is appended to the plaintext before encryption.  
 After decryption, the hash is recomputed and compared to verify authenticity.
+
+## Cipher Used: Hill Cipher
+  `
+The Hill Cipher is a classical **polygraphic substitution cipher** based on **matrix multiplication**.
+
+- Operates on blocks of letters (size = 3)  
+- Uses a **3×3 key matrix**  
+- All operations are performed **modulo 26**  
