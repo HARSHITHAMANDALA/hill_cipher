@@ -5,7 +5,7 @@ This project implements a **cryptographic system** that combines a classical enc
 - Encryption is achieved using the Hill Cipher (key: 3×3 matrix)  
 - Integrity is verified using a custom hash function  
 
-## Working Principle of the Project
+## Methodology
 
 The system ensures secure communication using two layers:
 
@@ -53,3 +53,12 @@ The hash function combines two techniques:
 The complete process is:
 
 Plaintext  ->    Hash Generation   ->   Convert Hash to Alphabet   ->   Append Hash to Message   ->   Encryption    ->   Decryption   ->   Remove Padding   ->   Split Message & Hash   ->   Recompute Hash   ->   Compare Hashes   ->   Integrity Verified / Failed
+
+## Instructions to run the code
+This project consists of:
+- `hill.cpp`
+- `hill.h`
+- `hash.h`
+
+- g++ hill.cpp -o out
+- ./out
