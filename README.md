@@ -35,15 +35,15 @@ The hash function combines two techniques:
 
 1. **Multiplicative Hashing**
    
-         h = (h × 31 + c) mod M
+         h = (h × 31 + c) mod m
    where:
    h = Current value of the hash
    c = Numeric value of the current character
-   M = modulus
+   m = modulus
 3. **Bitwise Mixing (Shift + XOR)**
    
-         hash = hash ⊕ (hash << 5)
-         hash = hash ⊕ (hash >> 3)
+         hash = hash ⊕ (hash << m)
+         hash = hash ⊕ (hash >> n)
 - Bitwise shift and XOR operations are applied to improve randomness and reduce collisions.
 - The function returns a **32-bit unsigned integer hash value**.
 - The hash is later converted into **alphabetic format (A–Z)** for compatibility with the Hill Cipher.  
