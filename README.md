@@ -34,6 +34,11 @@ The Hill Cipher is a classical **polygraphic substitution cipher** based on **ma
 The hash function combines two techniques:
 
 1. **Multiplicative Hashing**
+   
          h = (h × 31 + c) mod M
-2. **Bitwise Mixing (Shift + XOR)**
-         h = h ⊕ (h << 5) ⊕ (h >> 3)
+3. **Bitwise Mixing (Shift + XOR)**
+         hash = hash ⊕ (hash << 5)
+   
+         hash = hash ⊕ (hash >> 3)
+
+   
