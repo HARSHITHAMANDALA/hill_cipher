@@ -1,4 +1,4 @@
-# hill_cipher
+# Hill Cipher with Custom Hash Function
 ## Description
 This project implements a **cryptographic system** that combines a classical encryption cipher (**Hill Cipher**) with a **custom hashing function** to ensure both **data confidentiality and integrity**.
 
@@ -46,4 +46,9 @@ The hash function combines two techniques:
          hash = hash ⊕ (hash >> n)
 - Bitwise shift and XOR operations are applied to improve randomness and reduce collisions.
 - The function returns a **32-bit unsigned integer hash value**.
-- The hash is later converted into **alphabetic format (A–Z)** for compatibility with the Hill Cipher.  
+- The hash is later converted into **alphabetic format (A–Z)** for compatibility with the Hill Cipher.
+
+## Workflow of Authentication System
+
+The complete process is: 
+Plaintext -> Hash Generation -> Convert Hash to Alphabet -> Append Hash to Message -> Encryption -> Decryption -> Remove Padding -> Split Message & Hash -> Recompute Hash -> Compare Hashes -> Integrity Verified / Failed
