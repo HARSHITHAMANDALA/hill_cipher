@@ -56,9 +56,9 @@ Plaintext  ->    Hash Generation   ->   Convert Hash to Alphabet   ->   Append H
 
 ## Instructions to run the code
 This project consists of:
-- `hill.cpp`
-- `hill.h`
-- `hash.h`
+ - `hill.cpp`
+ - `hill.h`
+ - `hash.h`
 
-- g++ hill.cpp -o out
-- ./out
+g++ hill.cpp -o out
+./out
